@@ -1,0 +1,27 @@
+services:
+  # Backend API
+  backend:
+    build: ./backend
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./backend:/app
+    networks:
+      - cybernetwork
+
+  # Frontend React App
+  frontend:
+    build: ./frontend
+    ports:
+      - "3001:3000"
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - cybernetwork
+
+networks:
+  cybernetwork:
+    driver: bridge

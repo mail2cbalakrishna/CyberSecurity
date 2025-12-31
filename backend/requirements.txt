@@ -1,0 +1,10 @@
+# Core Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.4.2
+
+# System Monitoring
+psutil==5.9.6
+
+# HTTP & Utilities
+requests==2.31.0
