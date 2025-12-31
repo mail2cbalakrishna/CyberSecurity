@@ -1,3 +1,5 @@
+Copyright (c) 2025 Balakrishna C - Feel free to download, use, modify, and enhance this code for any purpose!
+
 # CyberSecurity AI Platform
 
 A comprehensive cybersecurity platform combining real-time network anomaly detection with AI/ML and advanced threat intelligence capabilities.
